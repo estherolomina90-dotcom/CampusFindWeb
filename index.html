@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusFind - Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Campus<span>Find</span></div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#items">Found Items</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html" class="nav-btn">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="small-title">CAMPUS LOST & FOUND</p>
+
+            <h1>Lost something?<br><span>Let's help you find it.</span></h1>
+
+            <p>
+                CampusFind helps students find items that have been lost and handed in to an SRA officer, The lost and found office can be found in block D.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#items" class="primary-btn">View Found Items</a>
+                <a href="signup.html" class="secondary-btn">Create Account</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="items-section" id="items">
+        <div class="section-heading">
+            <div>
+                <p class="small-title">RECENTLY FOUND</p>
+                <h2>Found Items</h2>
+            </div>
+
+            <input type="text" id="searchInput" placeholder="Search items..." onkeyup="displayHomeItems()">
+        </div>
+
+        <div class="item-grid" id="homeItems"></div>
+    </section>
+
+    <footer>
+        <div class="logo">Campus<span>Find</span></div>
+        <p>Helping students reconnect with their lost belongings.</p>
+        <p>estherolomina90@gmail.com to join the LOST AND FOUND COMMITY </p>
+        <p>© 2026 CampusFind</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

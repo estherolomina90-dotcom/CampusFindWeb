@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CampusFind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-body">
+
+    <div class="auth-container">
+
+        <div class="auth-info">
+            <div class="logo">Campus<span>Find</span></div>
+
+            <h1>Welcome back.</h1>
+
+            <p>
+                Login to check found items and contact the administrator about your belongings.
+            </p>
+
+            <a href="index.html">← Back to Home</a>
+        </div>
+
+        <div class="auth-form">
+            <h2>Login</h2>
+            <p class="form-subtitle">Access your CampusFind account</p>
+
+            <form onsubmit="login(event)">
+
+                <label>Email</label>
+                <input type="email" id="loginEmail" required>
+
+                <label>Password</label>
+                <input type="password" id="loginPassword" required>
+
+                <button type="submit" class="primary-btn full-btn">
+                Login
+            </button>
+
+            </form>
+
+            <p class="account-text">
+                Don't have an account?
+                <a href="signup.html">Create one</a>
+            </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

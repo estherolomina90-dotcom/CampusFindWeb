@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - CampusFind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Campus<span>Find</span></div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="admin.html">Admin</a>
+                <button onclick="logout()" class="logout-btn">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="admin-dashboard">
+
+        <div class="dashboard-header">
+            <div>
+                <p class="small-title">ADMINISTRATOR</p>
+                <h1>Admin Dashboard</h1>
+                <p>Upload and manage found items.</p>
+            </div>
+        </div>
+
+        <div class="admin-layout">
+
+            <div class="admin-form">
+
+                <h2>Upload Found Item</h2>
+
+                <form onsubmit="addItem(event)">
+
+                    <label>Item Name</label>
+                    <input type="text" id="itemName" placeholder="e.g. Black HP Laptop" required>
+
+                    <label>Description</label>
+                    <textarea id="itemDescription" placeholder="Describe the item..." required></textarea>
+
+                    <label>Location Found</label>
+                    <input type="text" id="itemLocation" placeholder="e.g. University Library" required>
+
+                    <label>Item Image</label>
+                    <input type="file" id="itemImage" accept="image/*" required>
+
+                    <button type="submit" class="primary-btn full-btn">
+                    Upload Item
+                </button>
+
+                </form>
+
+            </div>
+
+            <div class="admin-items">
+
+                <h2>Manage Found Items</h2>
+
+                <div id="adminItems"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

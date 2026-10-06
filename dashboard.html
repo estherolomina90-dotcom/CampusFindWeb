@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - CampusFind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Campus<span>Find</span></div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <button onclick="logout()" class="logout-btn">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="dashboard">
+
+        <div class="dashboard-header">
+            <div>
+                <p class="small-title">STUDENT DASHBOARD</p>
+                <h1>Welcome, <span id="userName"></span></h1>
+                <p>Search through items found around campus.</p>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="dashboardSearch" placeholder="Search for your lost item..." onkeyup="displayDashboardItems()">
+        </div>
+
+        <h2>Recently Found Items</h2>
+
+        <div class="item-grid" id="dashboardItems"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

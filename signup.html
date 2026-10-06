@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - CampusFind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-body">
+
+    <div class="auth-container">
+
+        <div class="auth-info">
+            <div class="logo">Campus<span>Find</span></div>
+
+            <h1>Never lose hope of finding your item.</h1>
+
+            <p>
+                Create an account to search for your lost belongings and contact the administrator about found items.
+            </p>
+
+            <a href="index.html">← Back to Home</a>
+        </div>
+
+        <div class="auth-form">
+            <h2>Create Account</h2>
+            <p class="form-subtitle">Join CampusFind today</p>
+
+            <form onsubmit="signup(event)">
+
+                <label>Full Name</label>
+                <input type="text" id="signupName" required>
+
+                <label>Email</label>
+                <input type="email" id="signupEmail" required>
+
+                <label>Password</label>
+                <input type="password" id="signupPassword" required>
+
+                <button type="submit" class="primary-btn full-btn">
+                Create Account
+            </button>
+
+            </form>
+
+            <p class="account-text">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
